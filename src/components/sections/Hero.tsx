@@ -58,12 +58,10 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.6 }}
         >
           <a 
-            href={WHATSAPP_LINK}
-            target="_blank"
-            rel="noopener noreferrer" 
+            href="/book"
             className="inline-block bg-stone-900 text-stone-50 px-10 py-4 uppercase tracking-[0.2em] text-sm hover:bg-sage-700 transition-colors duration-300"
           >
-            Book Your Experience
+            Schedule Sanctuary Session
           </a>
         </motion.div>
       </div>

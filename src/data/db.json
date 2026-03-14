@@ -16,52 +16,51 @@
     "paragraph2": "From our signature facials to our bespoke home services, every detail is orchestrated to provide an atmosphere of utmost relaxation and privacy.",
     "image": "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=2000&auto=format&fit=crop",
     "stats": [
-      { "label": "Happy Clients", "value": "2,500+" },
-      { "label": "Years Experience", "value": "8" },
-      { "label": "Premium Products", "value": "12+" },
-      { "label": "Service Rating", "value": "4.9/5" }
+      {
+        "label": "Happy Clients",
+        "value": "2,500+"
+      },
+      {
+        "label": "Years Experience",
+        "value": "8"
+      },
+      {
+        "label": "Premium Products",
+        "value": "12+"
+      },
+      {
+        "label": "Service Rating",
+        "value": "4.9/5"
+      }
     ]
   },
   "services": [
     {
       "id": "skin",
       "title": "Skin Treatments",
+      "price": 75000,
+      "duration": "90 mins",
       "description": "Medical-grade rejuvenation and restorative therapies for radiant, healthy skin.",
       "image": "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2000&auto=format&fit=crop"
     },
     {
       "id": "massage",
       "title": "Massage Therapy",
+      "price": 55000,
+      "duration": "60 mins",
       "description": "Release tension and find deep relaxation with our bespoke massage techniques.",
       "image": "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=2000&auto=format&fit=crop"
     },
     {
       "id": "facials",
       "title": "Luxury Facials",
+      "price": 45000,
+      "duration": "45 mins",
       "description": "Curated facial treatments using high-performance botanicals and advanced tech.",
       "image": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=2000&auto=format&fit=crop"
     }
   ],
-  "bookings": [
-    {
-      "id": "BK-1001",
-      "clientName": "Chioma Adeleke",
-      "service": "Kadoshh Signature Facial",
-      "date": "2026-03-20",
-      "time": "10:00 AM",
-      "status": "Confirmed",
-      "payment": "Paid"
-    },
-    {
-      "id": "BK-1002",
-      "clientName": "Segun Williams",
-      "service": "Deep Tissue Massage",
-      "date": "2026-03-21",
-      "time": "02:30 PM",
-      "status": "Pending",
-      "payment": "Unpaid"
-    }
-  ],
+  "bookings": [],
   "messages": [
     {
       "id": "MSG-001",
@@ -77,11 +76,31 @@
     "totalRevenue": 2450000,
     "pendingAmount": 85000,
     "transactions": [
-      { "id": "TRX-5542", "client": "Chioma Adeleke", "amount": 55000, "date": "2026-03-14", "method": "Card" },
-      { "id": "TRX-5541", "client": "Bisi Akande", "amount": 35000, "date": "2026-03-13", "method": "Transfer" }
+      {
+        "id": "TRX-5542",
+        "client": "Chioma Adeleke",
+        "amount": 55000,
+        "date": "2026-03-14",
+        "method": "Card"
+      },
+      {
+        "id": "TRX-5541",
+        "client": "Bisi Akande",
+        "amount": 35000,
+        "date": "2026-03-13",
+        "method": "Transfer"
+      }
     ]
   },
-  "users": [],
+  "users": [
+    {
+      "id": "e566be7e-d0ed-4a54-b874-8a343416fcfc",
+      "name": "Wilson Igiri",
+      "email": "inyangwilson17@gmail.com",
+      "password": "$2b$10$.9jloRU8ad1Ucp1bi8OkFOThe4zKLoMp3Bh1tFuDMp3QwXPR8a8DW",
+      "createdAt": "2026-03-14T20:12:22.531Z"
+    }
+  ],
   "chatbot": {
     "welcomeMessage": "Welcome to Kadoshh Wellness. How may I assist you with a booking or inquiry today?",
     "voiceRate": 0.95,

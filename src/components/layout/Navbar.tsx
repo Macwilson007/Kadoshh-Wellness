@@ -36,14 +36,12 @@ export default function Navbar() {
               <Link href="/login" className="text-stone-600 hover:text-stone-900 transition-colors uppercase text-sm tracking-wider">Sign In</Link>
             )}
 
-            <a 
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noopener noreferrer" 
+            <Link 
+              href="/book"
               className="bg-stone-900 text-stone-50 px-6 py-2.5 rounded-sm uppercase text-xs tracking-widest hover:bg-stone-800 transition-colors"
             >
               Book Now
-            </a>
+            </Link>
           </div>
           <div className="md:hidden flex items-center">
             <button
@@ -63,14 +61,13 @@ export default function Navbar() {
             <Link href="/about" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-stone-600 hover:text-stone-900 uppercase text-sm tracking-wider">About</Link>
             <Link href="/location" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-stone-600 hover:text-stone-900 uppercase text-sm tracking-wider">Location</Link>
             <Link href="/contact" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-stone-600 hover:text-stone-900 uppercase text-sm tracking-wider">Contact</Link>
-            <a 
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noopener noreferrer" 
+            <Link 
+              href="/book"
+              onClick={() => setIsOpen(false)}
               className="block mt-4 bg-stone-900 text-stone-50 px-6 py-3 rounded-sm uppercase text-xs tracking-widest mx-4"
             >
               Book Appointment
-            </a>
+            </Link>
           </div>
         </div>
       )}
