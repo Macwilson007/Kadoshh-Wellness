@@ -1,0 +1,11 @@
+
+> kadoshh-wellness@0.1.0 lint
+> eslint
+
+
+C:\Users\USER\Documents\Projects\Kadoshh Wellness\src\app\admin\page.tsx
+   7:36  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+  84:17  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+Γ£û 2 problems (1 error, 1 warning)
+

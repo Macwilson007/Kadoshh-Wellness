@@ -1,0 +1,90 @@
+{
+  "footer": {
+    "address": "Ikoyi, Lagos, Nigeria",
+    "phone": "+234 909 891 4461",
+    "instagram": "@kadoshhwellness",
+    "email": "hello@kadoshhwellness.com"
+  },
+  "hero": {
+    "title": "Restore your \n<span class=\"italic font-light\">inner glow.</span>",
+    "subtitle": "Experience luxury skin treatments, massage, and facials. Strictly by appointment to guarantee your utmost privacy and relaxation.",
+    "backgroundImage": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=2940&auto=format&fit=crop"
+  },
+  "about": {
+    "title": "An elevated, high-touch sanctuary in Ikoyi.",
+    "paragraph1": "We believe that self-care is not just a luxury—it's an essential part of living your best life. Our treatments are meticulously designed to restore not just your skin, but your inner peace.",
+    "paragraph2": "From our signature facials to our bespoke home services, every detail is orchestrated to provide an atmosphere of utmost relaxation and privacy.",
+    "image": "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=2000&auto=format&fit=crop",
+    "stats": [
+      { "label": "Happy Clients", "value": "2,500+" },
+      { "label": "Years Experience", "value": "8" },
+      { "label": "Premium Products", "value": "12+" },
+      { "label": "Service Rating", "value": "4.9/5" }
+    ]
+  },
+  "services": [
+    {
+      "id": "skin",
+      "title": "Skin Treatments",
+      "description": "Medical-grade rejuvenation and restorative therapies for radiant, healthy skin.",
+      "image": "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2000&auto=format&fit=crop"
+    },
+    {
+      "id": "massage",
+      "title": "Massage Therapy",
+      "description": "Release tension and find deep relaxation with our bespoke massage techniques.",
+      "image": "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=2000&auto=format&fit=crop"
+    },
+    {
+      "id": "facials",
+      "title": "Luxury Facials",
+      "description": "Curated facial treatments using high-performance botanicals and advanced tech.",
+      "image": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=2000&auto=format&fit=crop"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "BK-1001",
+      "clientName": "Chioma Adeleke",
+      "service": "Kadoshh Signature Facial",
+      "date": "2026-03-20",
+      "time": "10:00 AM",
+      "status": "Confirmed",
+      "payment": "Paid"
+    },
+    {
+      "id": "BK-1002",
+      "clientName": "Segun Williams",
+      "service": "Deep Tissue Massage",
+      "date": "2026-03-21",
+      "time": "02:30 PM",
+      "status": "Pending",
+      "payment": "Unpaid"
+    }
+  ],
+  "messages": [
+    {
+      "id": "MSG-001",
+      "name": "Linda Ikeji",
+      "email": "linda@example.com",
+      "subject": "Bridal Package Inquiry",
+      "message": "Hello, I am interested in the bridal prep package for my wedding in June. Can you provide more details?",
+      "date": "2026-03-14",
+      "read": false
+    }
+  ],
+  "payments": {
+    "totalRevenue": 2450000,
+    "pendingAmount": 85000,
+    "transactions": [
+      { "id": "TRX-5542", "client": "Chioma Adeleke", "amount": 55000, "date": "2026-03-14", "method": "Card" },
+      { "id": "TRX-5541", "client": "Bisi Akande", "amount": 35000, "date": "2026-03-13", "method": "Transfer" }
+    ]
+  },
+  "users": [],
+  "chatbot": {
+    "welcomeMessage": "Welcome to Kadoshh Wellness. How may I assist you with a booking or inquiry today?",
+    "voiceRate": 0.95,
+    "voicePitch": 1.05
+  }
+}

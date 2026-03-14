@@ -1,0 +1,3 @@
+import Link from 'next/link';
+
+// Inside your component, you'd replace the <a> tags manually. Let's provide a full replacement for Navbar.
