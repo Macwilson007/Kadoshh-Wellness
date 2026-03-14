@@ -40,8 +40,8 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="max-w-md mx-auto px-4 py-20 mt-10">
-      <div className="bg-white p-8 rounded-sm shadow-sm border border-stone-200">
+    <div className="min-h-screen bg-stone-50/50 flex items-center justify-center pt-32 pb-20 px-4">
+      <div className="bg-white p-8 rounded-sm shadow-sm border border-stone-200 max-w-md w-full">
         <h1 className="text-3xl font-light mb-6 text-stone-800 text-center uppercase tracking-widest">Sign In</h1>
         {error && <p className="text-red-500 mb-4 text-sm text-center">{error}</p>}
         <form onSubmit={handleSubmit} className="space-y-6">
