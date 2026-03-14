@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function BookingPage() {
   return (
-    <div className="min-h-screen bg-stone-50/50">
+    <div className="min-h-screen bg-stone-50/50 pt-20">
       {/* Visual Header */}
       <div className="h-64 bg-stone-900 flex items-center justify-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-40">
