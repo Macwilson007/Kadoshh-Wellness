@@ -26,9 +26,21 @@ export default function ProfilePage() {
       router.push('/login');
     }
     if (user) {
+      setFetching(true);
       fetch('/api/bookings')
         .then(res => res.json())
-        .then(data => setBookings(data))
+        .then(data => {
+          if (Array.isArray(data)) {
+            setBookings(data);
+          } else {
+            console.error("Expected array for bookings, got:", data);
+            setBookings([]);
+          }
+        })
+        .catch(err => {
+          console.error("Booking fetch error:", err);
+          setBookings([]);
+        })
         .finally(() => setFetching(false));
     }
   }, [user, loading, router]);
@@ -108,18 +120,40 @@ export default function ProfilePage() {
                   </div>
                 </div>
                 <div className="bg-white p-6 border border-stone-200 rounded-sm">
-                  <h4 className="text-xs uppercase tracking-widest text-stone-500 mb-4">Service Credits</h4>
+                  <h4 className="text-xs uppercase tracking-widest text-stone-500 mb-4">Active Sessions</h4>
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-stone-50 rounded-full flex items-center justify-center text-stone-600">
                       <Clock className="w-6 h-6" />
                     </div>
                     <div>
-                      <p className="text-stone-900 font-medium">2 Sessions Active</p>
-                      <p className="text-xs text-stone-500">Validity: Unlimited</p>
+                      <p className="text-stone-900 font-medium">{bookings.length} {bookings.length === 1 ? 'Session' : 'Sessions'} Scheduled</p>
+                      <p className="text-xs text-stone-500">Status: Account Active</p>
                     </div>
                   </div>
                 </div>
               </div>
+
+              {/* Next Session Preview */}
+              {bookings.length > 0 && (
+                <div className="bg-stone-50 border border-stone-200 rounded-sm p-6">
+                   <h4 className="text-xs uppercase tracking-widest text-stone-500 mb-4">Next Sanctuary Session</h4>
+                   <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                      <div>
+                        <h5 className="text-xl font-light text-stone-800">{bookings[0].serviceTitle}</h5>
+                        <div className="flex gap-4 text-xs text-stone-500 uppercase tracking-tighter mt-1">
+                          <span className="flex items-center gap-1"><Calendar size={12}/> {bookings[0].date}</span>
+                          <span className="flex items-center gap-1"><Clock size={12}/> {bookings[0].time}</span>
+                        </div>
+                      </div>
+                      <button 
+                        onClick={() => setActiveTab('bookings')}
+                        className="text-xs uppercase tracking-widest border border-stone-300 px-4 py-2 hover:bg-stone-900 hover:text-white transition-all"
+                      >
+                        View Details
+                      </button>
+                   </div>
+                </div>
+              )}
             </>
           )}
 

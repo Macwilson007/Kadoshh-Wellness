@@ -60,7 +60,19 @@
       "image": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=2000&auto=format&fit=crop"
     }
   ],
-  "bookings": [],
+  "bookings": [
+    {
+      "id": "BK-TEST-1",
+      "userId": "e566be7e-d0ed-4a54-b874-8a343416fcfc",
+      "serviceId": "facials",
+      "serviceTitle": "Bespoke Radiance Facial",
+      "price": 45000,
+      "date": "2026-03-25",
+      "time": "14:00",
+      "status": "Confirmed",
+      "createdAt": "2026-03-20T10:00:00.000Z"
+    }
+  ],
   "messages": [
     {
       "id": "MSG-001",

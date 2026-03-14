@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const DB_PATH = path.join(process.cwd(), 'src/data/db.json');
+const DB_PATH = path.join(process.cwd(), 'data/db.json');
 
 export function getSiteData() {
   try {
