@@ -123,7 +123,7 @@ export default function Home() {
                   className="w-full aspect-[4/5] object-cover" 
                 />
               </div>
-              <div className="absolute -bottom-10 -right-10 bg-white p-8 border border-stone-100 shadow-xl hidden md:block">
+              <div className="absolute -bottom-10 -right-10 z-20 bg-white p-8 border border-stone-100 shadow-xl hidden md:block">
                  <div className="flex items-center gap-4 mb-2">
                    <div className="flex">
                      {[...Array(5)].map((_, i) => <Star key={i} size={14} className="fill-stone-900 text-stone-900" />)}
