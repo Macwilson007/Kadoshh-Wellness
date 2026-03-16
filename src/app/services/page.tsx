@@ -13,7 +13,7 @@ const treatmentCategories = [
     title: "Skin Treatments",
     tagline: "Reveal your natural radiance",
     icon: <Sparkles className="w-6 h-6" strokeWidth={1.5} />,
-    image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2000&auto=format&fit=crop",
+    image: "/images/skincare.png",
     treatments: [
       { name: "Classic Facial", duration: "60 min", price: "₦25,000", description: "A deep-cleansing facial that purifies pores, exfoliates dead skin cells, and leaves your skin visibly refreshed and glowing." },
       { name: "Hydrating Glow Facial", duration: "75 min", price: "₦35,000", description: "Intense hydration therapy using hyaluronic acid serums and collagen masks to plump, brighten, and restore moisture balance." },
@@ -26,7 +26,7 @@ const treatmentCategories = [
     title: "Massage Therapy",
     tagline: "Restore balance and inner calm",
     icon: <Flower2 className="w-6 h-6" strokeWidth={1.5} />,
-    image: "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=2000&auto=format&fit=crop",
+    image: "/images/massage.png",
     treatments: [
       { name: "Swedish Relaxation Massage", duration: "60 min", price: "₦20,000", description: "Long, flowing strokes designed to reduce stress, improve circulation, and promote deep relaxation throughout the body." },
       { name: "Deep Tissue Massage", duration: "60 min", price: "₦25,000", description: "Firm pressure targeting deep muscle layers to relieve chronic tension, knots, and postural misalignment." },
@@ -39,7 +39,7 @@ const treatmentCategories = [
     title: "Luxury Facials",
     tagline: "High-touch, results-driven skincare",
     icon: <Droplets className="w-6 h-6" strokeWidth={1.5} />,
-    image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=2000&auto=format&fit=crop",
+    image: "/images/facial.png",
     treatments: [
       { name: "The Kadoshh Signature Facial", duration: "90 min", price: "₦55,000", description: "Our flagship treatment — a multi-step luxury facial combining enzyme peels, microcurrent sculpting, LED therapy, and a 24K gold mask." },
       { name: "Vitamin C Brightening Facial", duration: "60 min", price: "₦30,000", description: "High-potency Vitamin C infusion to even out skin tone, reduce hyperpigmentation, and boost collagen production." },
@@ -52,7 +52,7 @@ const treatmentCategories = [
     title: "Home Services",
     tagline: "Luxury treatments at your doorstep",
     icon: <Home className="w-6 h-6" strokeWidth={1.5} />,
-    image: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=2000&auto=format&fit=crop",
+    image: "/images/about.png",
     treatments: [
       { name: "At-Home Signature Facial", duration: "90 min", price: "₦70,000", description: "Our full Kadoshh Signature Facial experience brought to the comfort of your home with our portable luxury setup." },
       { name: "At-Home Relaxation Massage", duration: "60 min", price: "₦30,000", description: "Professional massage therapy in your personal space — we bring everything including the premium massage table and linens." },
@@ -67,7 +67,7 @@ export default function ServicesPage() {
     <main className="min-h-screen pt-20">
       {/* Hero Banner */}
       <section className="relative py-24 md:py-32 bg-stone-100 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=2940&auto=format&fit=crop')] bg-cover bg-center opacity-10"></div>
+        <div className="absolute inset-0 bg-[url('/images/hero.png')] bg-cover bg-center opacity-10"></div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <h2 className="text-sm uppercase tracking-[0.3em] text-sage-700 font-medium mb-4">Our Offerings</h2>

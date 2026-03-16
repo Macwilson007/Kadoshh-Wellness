@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 export default function Features() {
   return (
     <section id="about" className="py-24 bg-sage-900 text-stone-50 overflow-hidden relative">
-      <div className="absolute top-0 right-0 w-1/2 h-full opacity-10 bg-[url('https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=2787&auto=format&fit=crop')] bg-cover bg-center"></div>
+      <div className="absolute top-0 right-0 w-1/2 h-full opacity-10 bg-[url('/images/massage.png')] bg-cover bg-center"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -47,7 +47,7 @@ export default function Features() {
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img 
-              src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=2000&auto=format&fit=crop" 
+              src="/images/about.png" 
               alt="Spa interior" 
               className="absolute inset-0 w-full h-full object-cover"
             />

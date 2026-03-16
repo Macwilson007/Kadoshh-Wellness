@@ -12,7 +12,7 @@ export default function Hero() {
     fetch('/api/content').then(res => res.json()).then(resData => setData(resData?.hero));
   }, []);
 
-  const bgImage = data?.backgroundImage || "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=2940&auto=format&fit=crop";
+  const bgImage = data?.backgroundImage || "/images/hero.png";
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-stone-100 pt-20">

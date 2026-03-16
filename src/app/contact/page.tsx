@@ -51,7 +51,7 @@ export default function ContactPage() {
     <main className="min-h-screen pt-20">
       {/* Hero */}
       <section className="relative py-24 md:py-32 bg-stone-100 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2940&auto=format&fit=crop')] bg-cover bg-center opacity-10"></div>
+        <div className="absolute inset-0 bg-[url('/images/hero.png')] bg-cover bg-center opacity-10"></div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <h2 className="text-sm uppercase tracking-[0.3em] text-sage-700 font-medium mb-4">Contact</h2>

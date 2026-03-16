@@ -12,7 +12,7 @@ export default function BookingPage() {
       <div className="h-64 bg-stone-900 flex items-center justify-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-40">
            <img 
-             src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2000&auto=format&fit=crop" 
+             src="/images/home_service.png" 
              alt="Luxury Spa Background" 
              className="w-full h-full object-cover"
            />

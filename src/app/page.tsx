@@ -185,7 +185,7 @@ export default function Home() {
       <section className="py-24 relative overflow-hidden bg-stone-900">
          <div className="absolute inset-0 opacity-20">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="https://images.unsplash.com/photo-1544161515-4af6214bd33b?q=80&w=2000&auto=format&fit=crop" alt="Bg" className="w-full h-full object-cover" />
+            <img src="/images/home_service.png" alt="Bg" className="w-full h-full object-cover" />
          </div>
          <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
             <h2 className="font-serif text-4xl md:text-6xl text-stone-50 mb-8 leading-tight">Can't make it to Ikoyi?<br/><span className="italic font-light opacity-80">We'll bring the sanctuary to you.</span></h2>

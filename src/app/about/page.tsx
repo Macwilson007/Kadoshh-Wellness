@@ -51,7 +51,7 @@ export default function AboutPage() {
     <main className="min-h-screen pt-20">
       {/* Hero Section */}
       <section className="relative py-24 md:py-32 bg-sage-900 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=2787&auto=format&fit=crop')] bg-cover bg-center opacity-15"></div>
+        <div className="absolute inset-0 bg-[url('/images/massage.png')] bg-cover bg-center opacity-15"></div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <h2 className="text-sm uppercase tracking-[0.3em] text-sage-300 font-medium mb-4">Our Story</h2>
@@ -100,15 +100,15 @@ export default function AboutPage() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-4">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=800&auto=format&fit=crop" alt="Spa treatment room" className="w-full h-60 object-cover" />
+                  <img src="/images/about.png" alt="Spa treatment room" className="w-full h-60 object-cover" />
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?q=80&w=800&auto=format&fit=crop" alt="Skincare products" className="w-full h-40 object-cover" />
+                  <img src="/images/skincare.png" alt="Skincare products" className="w-full h-40 object-cover" />
                 </div>
                 <div className="space-y-4 mt-8">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=800&auto=format&fit=crop" alt="Relaxation space" className="w-full h-40 object-cover" />
+                  <img src="/images/massage.png" alt="Relaxation space" className="w-full h-40 object-cover" />
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800&auto=format&fit=crop" alt="Massage therapy" className="w-full h-60 object-cover" />
+                  <img src="/images/facial.png" alt="Massage therapy" className="w-full h-60 object-cover" />
                 </div>
               </div>
             </motion.div>
